@@ -23,13 +23,14 @@
     grid-column: 1/4;
     grid-row: 1/4;
 }
+
 .bio{
     grid-column: 2/4;
     grid-row: 3;
 }
 .purpose{
     grid-column: 2/4;
-    grid-row: 1/4;
+    grid-row: 2;
 }
 .logos{
     
