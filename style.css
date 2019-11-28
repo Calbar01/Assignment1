@@ -10,15 +10,19 @@
 /*Found help from NILE, as well as https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout*/
 .indexall{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
-.intro,
-.icon{
-    grid-column: 1/2;
-    grid-row: 1;
-    padding-top: 100px;
+.intro{
+    grid-column: 1;
+    grid-row: 2/5;
+
+}
+.bio{
+    grid-column: 2/4;
+    grid-row: 1/3;
+    padding-top: 5px;
 }
 /*Centers everything, whilst maximising the width to 100%*/
 /*Also adds a gradient with the colour red and blue as the pages background*/
@@ -37,7 +41,8 @@ body{
 /*h1-h3 will all have the same font and the same colour due to this line*/
 h1,
 h2,
-h3{
+h3,
+p{
     font-family: 'Sulphur Point', sans-serif;
     color: black;
 }
@@ -89,7 +94,6 @@ li a:hover{
 /*Gives icon section padding to push it away from the subhead class*/
 /*Help found from NILE*/
 .icon{
-    padding-top: 400px;
     width: 100%;
     height: 100%;
     float: left;
