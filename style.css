@@ -1,0 +1,65 @@
+/*Styles everything with no margin and padding*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*INDEX PAGE*/
+
+/*Centers everything, whilst maximising the width to 100%*/
+body{
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+}
+/*h1-h3 will all have the same font and the same colour due to this line*/
+h1,
+h2,
+h3{
+    font-family: 'Sulphur Point', sans-serif;
+    color: black;
+}
+
+/*Picture of me will now be circular, with no grayscale*/
+.me{
+    border-style: none;
+    border-radius: 100%;
+    filter: invert(0);
+}
+/*When hovering over the image of me, it will invert the colours*/
+.me:hover{
+    filter: invert(1);
+    border-style: none;
+    border-radius: 100%;
+    transition: background-size 0.3s ease;
+}
+
+/*Navigation bar*/
+/*Starter code found from NILE*/
+ul{
+    overflow: auto;
+    list-style-type: none;
+}
+
+li{
+    /*Styles the navigation bar to seperate the links */
+    height: 25px;
+    float: left;
+    margin-right: 0px;
+    border-right: 1px solid #aaaaaa;
+    padding: 0 20px;
+    padding-bottom: 10px;
+}
+li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: silver;
+    font-family: 'Sulphur Point', sans-serif;
+}
+li a:hover{
+    /*Whilst hovering over the navigation links, the letters turn red*/
+    color: red;
+    font-size: 15pt;
+}
+
