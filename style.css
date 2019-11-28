@@ -8,6 +8,7 @@
 /*INDEX PAGE*/
 
 /*Centers everything, whilst maximising the width to 100%*/
+/*Also adds a gradient with the colour red and blue as the pages background*/
 body{
     text-align: center;
     width: 100%;
