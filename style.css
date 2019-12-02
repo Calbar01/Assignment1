@@ -54,6 +54,7 @@ body{
 }
 
 /*h1-h3 will all have the same font and the same colour due to this line*/
+/*the 'p' tag will also have the same fo t styling*/
 h1,
 h2,
 h3,
@@ -89,12 +90,14 @@ ul{
 
 li{
     /*Styles the navigation bar to seperate the links */
+    /*Also styles the border of the navigation with white boxes*/
     height: 25px;
     float: left;
     margin-right: 0px;
     border-right: 1px solid #aaaaaa;
     padding: 0 20px;
     padding-bottom: 10px;
+    border-style: ridge;
 }
 li a{
     text-decoration: none;
@@ -103,7 +106,9 @@ li a{
     font-family: 'Sulphur Point', sans-serif;
 }
 li a:hover{
-    /*Whilst hovering over the navigation links, the letters turn red*/
+    /*Whilst hovering over the navigation links, the letters turn red, and enlarge to 15pt*/
+    /*Also adds a transition delay, where the font and colour changes in 0.3s, makes it more smooth*/
+    transition-duration: 0.3s;
     color: red;
     font-size: 15pt;
 }
