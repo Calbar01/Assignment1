@@ -4,43 +4,8 @@
     padding: 0;
 }
 
+/*REUSABLE CODE*/
 
-/*INDEX PAGE*/
-/*This puts the index file into a 'grid' allows me to put classes into columns to organise it.*/
-/*Found help from NILE, as well as https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout*/
-.indexall{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-}
-.intro{
-    grid-column: 1;
-    grid-row: 2/4;
-
-}
-
-.landingnav,
-.portfolionav{
-    grid-column: 1/4;
-    grid-row: 1/4;
-}
-
-.bio{
-    grid-column: 2/4;
-    grid-row: 3;
-}
-.purpose{
-    grid-column: 2/4;
-    grid-row: 2;
-}
-.logos{
-    
-    grid-column: 1/4;
-    grid-row: 4;
-    border-style: none;
-    height: 5px;
-}
 /*Centers everything, whilst maximising the width to 100%*/
 /*Also adds a gradient with the colour red and blue as the pages background*/
 body{
@@ -68,21 +33,6 @@ p{
     font-size: 13pt;
 }
 
-/*Picture of me will now be circular, with no grayscale*/
-.me{
-    transition-duration: 0.5s;
-    border-style: none;
-    border-radius: 100%;
-    filter: invert(0);
-    height: 250px;
-}
-/*When hovering over the image of me, it will invert the colours*/
-.me:hover{
-    filter: invert(1);
-    transition-duration: 0.5s;
-    border-style: none;
-    border-radius: 100%;
-}
 
 /*Navigation bar*/
 /*Starter code found from NILE*/
@@ -117,6 +67,59 @@ li a:hover{
     font-size: 15pt;
 }
 
+
+/*INDEX PAGE*/
+/*This puts the index file into a 'grid' allows me to put classes into columns to organise it.*/
+/*Found help from NILE, as well as https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout*/
+.indexall{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.intro{
+    grid-column: 1;
+    grid-row: 2/4;
+
+}
+.landingnav,
+.portfolionav{
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.bio{
+    grid-column: 2/4;
+    grid-row: 3;
+}
+.purpose{
+    grid-column: 2/4;
+    grid-row: 2;
+}
+.logos{
+    
+    grid-column: 1/4;
+    grid-row: 4;
+    border-style: none;
+    height: 5px;
+}
+
+/*Picture of me will now be circular, with no grayscale*/
+.me{
+    transition-duration: 0.5s;
+    border-style: none;
+    border-radius: 100%;
+    filter: invert(0);
+    height: 250px;
+}
+/*When hovering over the image of me, it will invert the colours*/
+.me:hover{
+    filter: invert(1);
+    transition-duration: 0.5s;
+    border-style: none;
+    border-radius: 100%;
+}
+
 /*icons*/
 /*Gives icon section padding to push it away from the subhead class*/
 /*Help found from NILE*/
@@ -140,4 +143,9 @@ li a:hover{
 .github:hover{
     color: blueviolet;
 }
+
+
+
+
+
 
