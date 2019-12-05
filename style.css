@@ -19,6 +19,7 @@
     grid-row: 2/4;
 
 }
+
 .landingnav{
     grid-column: 1/4;
     grid-row: 1/4;
@@ -68,6 +69,7 @@ p{
 
 /*Picture of me will now be circular, with no grayscale*/
 .me{
+    transition-duration: 0.5s;
     border-style: none;
     border-radius: 100%;
     filter: invert(0);
@@ -76,9 +78,9 @@ p{
 /*When hovering over the image of me, it will invert the colours*/
 .me:hover{
     filter: invert(1);
+    transition-duration: 0.5s;
     border-style: none;
     border-radius: 100%;
-    transition: background-size 0.3s ease;
 }
 
 /*Navigation bar*/
@@ -104,6 +106,7 @@ li a{
     font-weight: bold;
     color: silver;
     font-family: 'Sulphur Point', sans-serif;
+    transition-duration: 0.3s;
 }
 li a:hover{
     /*Whilst hovering over the navigation links, the letters turn red, and enlarge to 15pt*/
