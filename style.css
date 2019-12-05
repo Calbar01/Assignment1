@@ -80,10 +80,8 @@ li a:hover{
 .intro{
     grid-column: 1;
     grid-row: 2/4;
-
 }
-.landingnav,
-.portfolionav{
+.landingnav{
     grid-column: 1/4;
     grid-row: 1/4;
 }
@@ -96,15 +94,9 @@ li a:hover{
     grid-column: 2/4;
     grid-row: 2;
 }
-.logos{
-    
-    grid-column: 1/4;
-    grid-row: 4;
-    border-style: none;
-    height: 5px;
-}
 
-/*Picture of me will now be circular, with no grayscale*/
+
+/*Picture of me will now be circular, with no inversion*/
 .me{
     transition-duration: 0.5s;
     border-style: none;
@@ -146,9 +138,38 @@ li a:hover{
 
 
 /*PORTFOLIO PAGE*/
+/*I have used the grid display to organise all elements on the portfolio page as well, help from NILE and https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout*/ 
+.portfolioall{
+    display: grid;
+}
+
+.portfolionav{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.portpics{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.image{
+    border-radius: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.image:hover{
+    opacity: 0.5;
+    transition-duration: 0.3s;
+}
+
+.text{
+    grid-column: 1;
+    grid-row: 2;
+}
 
 
 
 
-
-
+/*
