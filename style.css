@@ -166,10 +166,9 @@ li a:hover{
 
 .text{
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 2/4;
 }
 
 
 
 
-/*
