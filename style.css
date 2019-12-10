@@ -143,18 +143,12 @@ li a:hover{
 
 /*PORTFOLIO PAGE*/
 /*I have used the grid display to organise all elements on the portfolio page as well, help from NILE and https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout*/ 
-.portfolioall{
-    display: grid;
-}
 
-.portfolionav{
-    grid-column: 1;
-    grid-row: 1;
-}
+
 
 .portpics{
-    grid-column: 4;
-    grid-row: 2;
+    grid-column: 2/4;
+    grid-row: 2/4;
 }
 
 .image{
