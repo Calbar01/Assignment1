@@ -71,7 +71,9 @@ li a:hover{
 /*INDEX PAGE*/
 /*This puts the index file into a 'grid' allows me to put classes into columns to organise it.*/
 /*Found help from NILE, as well as https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout*/
-.indexall{
+.indexall,
+.cvall,
+.portfolioall{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -81,7 +83,9 @@ li a:hover{
     grid-column: 1;
     grid-row: 2/4;
 }
-.landingnav{
+.landingnav,
+.cvnav,
+.portfolionav{
     grid-column: 1/4;
     grid-row: 1/4;
 }
@@ -168,6 +172,35 @@ li a:hover{
     grid-column: 1;
     grid-row: 2/4;
 }
+
+/*CV PAGE*/
+.cvall{
+    min-width: 100%;
+}
+.name{
+    grid-column: 1;
+    grid-row: 2/4;
+    margin-top: none;
+}
+.cvname{
+    font-weight: lighter;
+    font-size: 40pt;
+}
+
+.content{
+    grid-column: 2/4;
+    grid-row: 1;
+    padding-top: 10px;
+}
+.content-title{
+    border-bottom: 1px solid blue;
+    font-weight: lighter;
+}
+.logos{
+    height: 100px;
+    width: 200px;
+}
+
 
 
 
