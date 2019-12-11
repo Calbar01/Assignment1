@@ -72,8 +72,7 @@ li a:hover{
 /*This puts the index file into a 'grid' allows me to put classes into columns to organise it.*/
 /*Found help from NILE, as well as https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout*/
 .indexall,
-.cvall,
-.portfolioall{
+.cvall{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -84,8 +83,7 @@ li a:hover{
     grid-row: 2/4;
 }
 .landingnav,
-.cvnav,
-.portfolionav{
+.cvnav{
     grid-column: 1/4;
     grid-row: 1/4;
 }
@@ -143,12 +141,17 @@ li a:hover{
 
 /*PORTFOLIO PAGE*/
 /*I have used the grid display to organise all elements on the portfolio page as well, help from NILE and https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout*/ 
-
-
+.textpics{
+    display: grid;
+}
+.portfolionav{
+    grid-column: 1/2;
+    grid-row: 1;
+}
 
 .portpics{
-    grid-column: 2/4;
-    grid-row: 2/4;
+    grid-column: 2;
+    grid-row: 2;
 }
 
 .image{
@@ -164,7 +167,7 @@ li a:hover{
 
 .text{
     grid-column: 1;
-    grid-row: 2/4;
+    grid-row: 1;
 }
 
 /*CV PAGE*/
@@ -193,6 +196,60 @@ li a:hover{
 .logos{
     height: 100px;
     width: 200px;
+}
+
+
+
+
+
+/*MEDIA QUERIES*/
+/*iPad Pro query, index*/
+@media (max-width: 1023px)
+{
+    h2,
+    h3{
+        font-size: 35px;
+    }
+    p{
+        font-size: 30px;
+    }
+    .me{
+        height: 350px;
+    }
+    .intro{
+        padding-top: 100px;
+        text-align: center;
+        float: left;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .icon{
+        height: 200px;
+    }
+}
+
+
+@media(max-width: 375px)
+{
+    .intro{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .bio{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .purpose{
+        grid-column: 2;
+        grid-row: 4;
+    }
+    p{
+        font-size: 15px;
+    }
+    .landingnav{
+        font-size: 11px;
+    }
 }
 
 
