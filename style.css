@@ -141,34 +141,39 @@ li a:hover{
 
 /*PORTFOLIO PAGE*/
 /*I have used the grid display to organise all elements on the portfolio page as well, help from NILE and https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout*/ 
-.textpics{
-    display: grid;
-}
-.portfolionav{
-    grid-column: 1/2;
-    grid-row: 1;
-}
+
 
 .portpics{
-    grid-column: 2;
-    grid-row: 2;
+    display: grid;
+    width: 50px;
+    height: 50px;
+    grid: repeat(2, 300px) / auto-flow 500px;
 }
 
-.image{
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6{
     border-radius: 100%;
     opacity: 1;
     transition-duration: 0.3s;
+    
 }
-
-.image:hover{
+.image1:hover,
+.image2:hover,
+.image3:hover,
+.image4:hover
+.image5:hover,
+.image6:hover{
     opacity: 0.5;
     transition-duration: 0.3s;
 }
 
-.text{
-    grid-column: 1;
-    grid-row: 1;
-}
+
+
+
 
 /*CV PAGE*/
 .cvall{
@@ -204,7 +209,7 @@ li a:hover{
 
 /*MEDIA QUERIES*/
 /*iPad Pro query, index*/
-@media (max-width: 1023px)
+@media (max-width: 1024px)
 {
     h2,
     h3{
@@ -227,9 +232,16 @@ li a:hover{
     .icon{
         height: 200px;
     }
+
+    /*IPad Pro Query, Portfolio*/
+    .portpics{
+    display: grid;
+    grid: repeat(2, 500px) / auto-flow 370px;
+    padding-top: 100px;
+    }
 }
 
-
+/*iPhoneX Query, Index*/
 @media(max-width: 375px)
 {
     .intro{
@@ -250,7 +262,41 @@ li a:hover{
     .landingnav{
         font-size: 11px;
     }
+    /*IPhone X Query, Portfolio*/
+    .portpics{
+        padding-left: 50px;
+        display: grid;
+        grid: repeat(2, 300px) / auto-flow 370px;
+    }
+    .image1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .image2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .image3{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .image4{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .image5{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .image6{
+        grid-column: 1;
+        grid-row: 6;
+    }
+
 }
+
+
+
 
 
 
