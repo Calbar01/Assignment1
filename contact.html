@@ -7,9 +7,43 @@
     <link rel="stylesheet" href="style.css">
     <!--This link is from google fonts, and it adds in the font sulphur point.-->
     <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Contact Me</title>
 </head>
 <body>
-    
+    <nav class="contactnav">
+        <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href=index.html">Home</a></li>
+            <li><a href="cv.html">My CV</a></li>
+            <li><a href="https://twitter.com/?lang=en-gb">Social Media</a></li>
+            </ul>
+    </nav>
+    <h1>Contact me!</h1>
+        <form>
+            <ul class="form">
+                <li class="label">
+                    <label for="first name">Your First-Name:</label>
+                    <input type="text" class="firstname" name="user_firstname">
+                </li>
+                <li class="label">
+                    <label for="surname">Your surname:</label>
+                    <input type="text" class="surname" name="user_surname">
+                </li>
+                <li class="label">
+                    <label for="email">E-mail address:</label>
+                    <input type="email" class="mail" name="user_email">
+                </li>
+                <li class="label">
+                    <label for="message">Drop me a line!</label>
+                    <textarea class="message" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send!</button>
+                </li>
+            </ul>
+        </form>
+
+
+
 </body>
 </html>

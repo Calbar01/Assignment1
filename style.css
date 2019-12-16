@@ -217,6 +217,56 @@ li a:hover{
     column-count: 2;
 }
 
+/*CONTACT ME PAGE*/
+form{
+    margin: 0 auto;
+  width: 500px;
+  height: 400px;
+  padding: 1em;
+  border: 3px solid blue;
+  border-radius: 5em;
+}
+
+label{
+    display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+
+textarea{
+    height: 5em;
+    vertical-align: top;
+}
+
+.button{
+    padding-top: 70px;
+}
+
+button{
+    background: transparent;
+    border: 2px solid blue;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+    height: 75px;
+    width: 100px;
+}
+
+button:hover{
+    background-color: blue;
+    color: white;
+    transition-duration: 0.5s;
+    
+}
+
+
+
+.form,
+.label,
+.button{
+    float: none;
+    border-style: none;
+}
+
 
 
 
@@ -316,6 +366,7 @@ li a:hover{
 /*https://stackoverflow.com/questions/26364636/how-to-fix-text-running-off-screen-and-breaking-layout-without-using-css-word-br/26364716*/
 /*https://css-tricks.com/almanac/properties/l/list-style/*/
 /*https://stackoverflow.com/questions/42613350/how-can-i-create-multi-columns-from-a-single-unordered-list*/
+/*https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form*/
 
 
 
