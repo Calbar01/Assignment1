@@ -31,6 +31,7 @@ p{
 }
 p{
     font-size: 13pt;
+    word-break: break-all;
 }
 
 
@@ -177,11 +178,14 @@ li a:hover{
 
 /*CV PAGE*/
 .cvall{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
     min-width: 100%;
 }
 .name{
-    grid-column: 1;
-    grid-row: 2/4;
+    grid-column: 1/2;
+    grid-row: 2;
     margin-top: none;
 }
 .cvname{
@@ -201,6 +205,16 @@ li a:hover{
 .logos{
     height: 100px;
     width: 200px;
+}
+.educationlist
+{
+    list-style: square inside none;
+    border-style: none;
+    overflow: initial;
+    float: none;
+}
+.skillslist{
+    column-count: 2;
 }
 
 
@@ -297,8 +311,11 @@ li a:hover{
 
 
 
-
-
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/grid*/
+/*https://stackoverflow.com/questions/26364636/how-to-fix-text-running-off-screen-and-breaking-layout-without-using-css-word-br/26364716*/
+/*https://css-tricks.com/almanac/properties/l/list-style/*/
+/*https://stackoverflow.com/questions/42613350/how-can-i-create-multi-columns-from-a-single-unordered-list*/
 
 
 
