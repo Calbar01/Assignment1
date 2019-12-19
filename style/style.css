@@ -31,7 +31,7 @@ p{
 }
 p{
     font-size: 13pt;
-    word-break: break-all;
+    word-break: break-all;font-family: 'Sulphur Point', sans-serif
 }
 
 
@@ -45,7 +45,7 @@ ul{
 li{
     /*Styles the navigation bar to seperate the links */
     /*Also styles the border of the navigation with white boxes*/
-    height: 25px;
+    
     float: left;
     margin-right: 0px;
     border-right: 1px solid #aaaaaa;
@@ -232,11 +232,15 @@ label{
     display: inline-block;
   width: 150px;
   text-align: right;
+  height: 50px;
+  font-family: 'Sulphur Point', sans-serif;
+  font-weight: bold;
 }
 
 textarea{
     height: 5em;
     vertical-align: top;
+    text-shadow: rgba(rgb(0, 0, 0), green, blue, alpha);
 }
 
 .button{
@@ -244,7 +248,7 @@ textarea{
 }
 
 button{
-    background: transparent;
+    background: #aaaaaa;
     border: 2px solid blue;
     border-radius: 6px;
     transition-duration: 0.5s;
