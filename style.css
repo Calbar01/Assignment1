@@ -212,6 +212,7 @@ li a:hover{
     border-style: none;
     overflow: initial;
     float: none;
+    font-size: 13pt;
 }
 .skillslist{
     column-count: 2;
@@ -303,6 +304,21 @@ button:hover{
     grid: repeat(2, 500px) / auto-flow 370px;
     padding-top: 100px;
     }
+
+    /*iPad Pro Query, CV*/
+    .name{
+        grid-row: 3;
+    }
+    .cvname{
+        font-size: 75pt;
+    }
+    .sub{
+        font-size: 30pt;
+    }
+    .educationlist{
+        font-size: 18pt;
+        height: auto;
+    }
 }
 
 /*iPhoneX Query, Index*/
@@ -355,6 +371,24 @@ button:hover{
     .image6{
         grid-column: 1;
         grid-row: 6;
+    }
+    /*iPhone X Query, CV*/
+    .name,
+    .content{
+        grid-column: 1;
+    }
+    .name{
+        grid-row: 2;
+    }
+    .content{
+        grid-row: 3;
+    }
+
+    .cvname{
+        font-size: 50pt;
+    }
+    .skillslist{
+        column-count: 1;
     }
 
 }
