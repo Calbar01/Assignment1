@@ -126,17 +126,21 @@ li a:hover{
     font-size: 20px;
 }
 /*Styles icons to be black, but change colour depending on if they are hovered over*/
-.twitter{
+.linkedin{
     color: black;
+    transition-duration: 0.5s;
 }
-.twitter:hover{
+.linkedin:hover{
     color: blue;
+    transition-duration: 0.5s;
 }
 .github{
     color: black;
+    transition-duration: 0.5s;
 }
 .github:hover{
     color: blueviolet;
+    transition-duration: 0.5s;
 }
 
 
@@ -323,6 +327,29 @@ button:hover{
         font-size: 18pt;
         height: auto;
     }
+
+    /*iPad Pro Query, contact me*/
+    form{
+        height: 1000px;
+        width: 750px;
+    }
+    button{
+        height: 250px;
+        width: 250px;
+        font-size: 55pt;
+    }
+
+    label{
+        font-size: 30pt;
+    }
+    input,
+    textarea{
+        height: 90px;
+        width: 500px;
+    }
+    textarea{
+        padding-bottom: 50px;
+    }
 }
 
 /*iPhoneX Query, Index*/
@@ -393,6 +420,16 @@ button:hover{
     }
     .skillslist{
         column-count: 1;
+    }
+
+    /*iPhone X Query, Contact me*/
+    .contacttitle{
+        font-size: 25pt;
+    }
+
+    form{
+        width: 300px;
+        text-align: center;
     }
 
 }
