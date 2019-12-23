@@ -404,8 +404,7 @@ button:hover{
     .contactfooter{
         height: 20px;
         margin-top: -50px;
-        position: auto
-        ;
+        position: fixed;
     }
     .icon{
         font-size: 20px;
