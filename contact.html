@@ -12,6 +12,7 @@
 <body>
     <nav class="contactnav">
         <ul>
+             <!--All hrefs here relocate the user to another html page, with the social media link relocating to my linkedin page (external)-->
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href=index.html">Home</a></li>
             <li><a href="cv.html">My CV</a></li>
@@ -19,9 +20,12 @@
             </ul>
     </nav>
     <h1 class="contacttitle">Contact me!</h1>
+    <!--the 'form' tag is used here to create a form where users can contact me on-->
         <form>
+            <!--the form is in an unordered list to help with the organisation-->
             <ul class="form">
                 <li class="label">
+                    <!--each 'label' is an element in the form, such as 'name' 'email' and 'message'-->
                     <label for="first name">Your First-Name:</label>
                     <input type="text" class="firstname" name="user_firstname">
                 </li>
@@ -37,6 +41,7 @@
                     <label for="message">Drop me a line!</label>
                     <textarea class="message" name="user_message"></textarea>
                 </li>
+                <!--this final element is the button the user clicks to send the form-->
                 <li class="button">
                     <button type="submit">Send!</button>
                 </li>
@@ -46,6 +51,7 @@
 
 
 </body>
+<!--Created another footer with external links to social media-->
 <footer class="contactfooter">
     <div class="icon">
      <a href="https://www.linkedin.com/in/calum-barratt-8b06a5184"><ion-icon name ="logo-linkedin" class="linkedin"></ion-icon></a>

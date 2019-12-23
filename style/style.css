@@ -19,6 +19,7 @@ body{
     );
 
 }
+/*This styles the footer on each page to be in a fixed position at the bottom, black in background and fills 100% width*/
 footer{
     position: fixed;
     bottom: 0;
@@ -34,9 +35,11 @@ p{
     font-family: 'Sulphur Point', sans-serif;
     color: black;
 }
+/*Helps wth the words running off the screen, help found from /*https://stackoverflow.com/questions/26364636/how-to-fix-text-running-off-screen-and-breaking-layout-without-using-css-word-br/26364716*/
 p{
     font-size: 13pt;
-    word-break: break-all;font-family: 'Sulphur Point', sans-serif
+    word-break: break-all;
+    font-family: 'Sulphur Point', sans-serif
 }
 
 
@@ -84,10 +87,12 @@ li a:hover{
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
+/*The intro class is in the first column, and covering rows 2 through 4*/
 .intro{
     grid-column: 1;
     grid-row: 2/4;
 }
+/*positions the navigation bar in the top left corner*/
 .landingnav,
 .cvnav{
     grid-column: 1/4;
@@ -160,6 +165,7 @@ li a:hover{
     grid: repeat(2, 240px) / auto-flow 500px;
 }
 
+/*All images will be circular, and will tranistion to have 0.5 opacity when hovered over after 0.3s*/
 .image1,
 .image2,
 .image3,
@@ -186,6 +192,7 @@ li a:hover{
 
 
 /*CV PAGE*/
+/*Created a grid here again, using code from NILE, and help from MDN /*https://developer.mozilla.org/en-US/docs/Web/CSS/grid*/
 .cvall{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -197,6 +204,7 @@ li a:hover{
     grid-row: 2;
     margin-top: none;
 }
+/*This lightens the font of the title*/
 .cvname{
     font-weight: lighter;
     font-size: 40pt;
@@ -207,14 +215,18 @@ li a:hover{
     grid-row: 1;
     padding-top: 10px;
 }
+/*Gives a blue underline to the title*/
 .content-title{
     border-bottom: 1px solid blue;
     font-weight: lighter;
 }
+/*Increaes size of the image*/
 .logos{
     height: 100px;
     width: 200px;
 }
+/*Styles the list into two columns, with no border, and if it overflows then it goes below to make a new line
+help found from /*https://css-tricks.com/almanac/properties/l/list-style/*/
 .educationlist
 {
     list-style: square inside none;
@@ -228,6 +240,8 @@ li a:hover{
 }
 
 /*CONTACT ME PAGE*/
+/*This creates the form, with no margin, makes the corners round, with a blue border
+help found from https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form*/
 form{
     margin: 0 auto;
   width: 500px;
@@ -236,7 +250,7 @@ form{
   border: 3px solid blue;
   border-radius: 5em;
 }
-
+/*Styles the labels to all have the same font, size and text alignment*/
 label{
     display: inline-block;
   width: 150px;
@@ -245,7 +259,7 @@ label{
   font-family: 'Sulphur Point', sans-serif;
   font-weight: bold;
 }
-
+/*The text area, where the user writes their message, will be styled with a specific height*/
 textarea{
     height: 5em;
     vertical-align: top;
@@ -255,7 +269,7 @@ textarea{
 .button{
     padding-top: 70px;
 }
-
+/*Styles the button, and adds a hover animation when hovered over, it will fill in blue and the text will turn white*/
 button{
     background: #aaaaaa;
     border: 2px solid blue;
@@ -286,9 +300,11 @@ button:hover{
 
 
 /*MEDIA QUERIES*/
+/*Media queries help with the responsiveness of the website, when the website is on a specific width, these rules will be called on*/
 /*iPad Pro query, index*/
 @media (max-width: 1024px)
 {
+    /*Changes size of font*/
     h2,
     h3{
         font-size: 35px;
@@ -299,6 +315,7 @@ button:hover{
     .me{
         height: 350px;
     }
+    /*pads the entire class downwards*/
     .intro{
         padding-top: 100px;
         text-align: center;
@@ -312,6 +329,7 @@ button:hover{
     }
 
     /*IPad Pro Query, Portfolio*/
+    /*redesigns the grid, so that the images are spread further apart*/
     .portpics{
     display: grid;
     grid: repeat(2, 500px) / auto-flow 370px;
@@ -319,6 +337,7 @@ button:hover{
     }
 
     /*iPad Pro Query, CV*/
+    /*increases font size, whilst also repositioning the name class downwards*/
     .name{
         grid-row: 3;
     }
@@ -334,6 +353,7 @@ button:hover{
     }
 
     /*iPad Pro Query, contact me*/
+    /*increases the size of the form*/
     form{
         height: 1000px;
         width: 750px;
@@ -360,6 +380,7 @@ button:hover{
 /*iPhoneX Query, Index*/
 @media(max-width: 375px)
 {
+    /*as this is a phone, the main style will be positioned into one column, with the content following after eachother going downwards*/
     .intro{
         grid-column: 2;
         grid-row: 2;
@@ -391,6 +412,7 @@ button:hover{
         font-size: 20px;
     }
     /*IPhone X Query, Portfolio*/
+    /*Similarly, the images will descend from image1 to image6*/
     .portpics{
         padding-left: 50px;
         display: grid;
@@ -421,6 +443,7 @@ button:hover{
         grid-row: 6;
     }
     /*iPhone X Query, CV*/
+    /*The cv content starts with my name is then followed by the lists of my experience*/
     .name,
     .content{
         grid-column: 1;
@@ -439,7 +462,9 @@ button:hover{
         column-count: 1;
     }
 
+
     /*iPhone X Query, Contact me*/
+    /*Decreases size of the form to fit the screen*/
     .contacttitle{
         font-size: 25pt;
     }
@@ -452,7 +477,7 @@ button:hover{
 }
 
 
-
+/*REFERENCE LIST*/
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column*/
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/grid*/
 /*https://stackoverflow.com/questions/26364636/how-to-fix-text-running-off-screen-and-breaking-layout-without-using-css-word-br/26364716*/
