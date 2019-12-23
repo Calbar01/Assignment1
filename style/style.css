@@ -262,6 +262,7 @@ label{
 textarea{
     height: 5em;
     vertical-align: top;
+    text-shadow: rgba(168, 24, 24, 0.719);
 }
 
 .button{
