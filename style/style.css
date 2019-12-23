@@ -202,7 +202,6 @@ li a:hover{
 .name{
     grid-column: 1/2;
     grid-row: 2;
-    margin-top: none;
 }
 /*This lightens the font of the title*/
 .cvname{
