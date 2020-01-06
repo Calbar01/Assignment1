@@ -248,6 +248,7 @@ form{
   padding: 1em;
   border: 3px solid blue;
   border-radius: 5em;
+  background-color: lightblue;
 }
 /*Styles the labels to all have the same font, size and text alignment*/
 label{
