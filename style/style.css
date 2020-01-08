@@ -442,6 +442,9 @@ button:hover{
     }
     /*iPhone X Query, CV*/
     /*The cv content starts with my name is then followed by the lists of my experience*/
+    .cvall{
+        margin-left: 3rem;
+    }
     .name,
     .content{
         grid-column: 1;
